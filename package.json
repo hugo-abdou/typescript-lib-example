@@ -8,12 +8,16 @@
   "license": "MIT",
   "scripts": {
     "clean": "shx rm -rf _bundles lib lib-esm",
+    "watch": "tsc --watch",
     "build": "npm run clean && tsc && tsc -m es6 --outDir lib-esm && webpack"
   },
   "dependencies": {
     "awesome-typescript-loader": "^3.0.4-rc.2",
+    "axios": "^1.2.0",
     "shx": "^0.2.2",
+    "tcs": "^10.0.2",
     "typescript": "^2.1.6",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "xlsx": "^0.18.5"
   }
 }
